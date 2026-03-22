@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jiaming Xu (许家铭)</title>
   <meta name="description" content="Jiaming Xu | Large Model and Agent Algorithm Researcher at Xiaomi Corporation" />
+  <link rel="icon" href="assets/favicon.jpg" type="image/jpeg" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jiaming Xu (许家铭)" />
+  <meta property="og:description" content="Large Model and Agent Algorithm Researcher at Xiaomi Corporation. Research on Multimodal LLMs, AI Agents, On-device AI, Reasoning and Memory." />
+  <meta property="og:image" content="https://jacoxu.github.io/assets/xujiaming.jpg" />
+  <meta property="og:url" content="https://jacoxu.github.io/" />
+  <meta property="og:type" content="website" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@jacoxu1987" />
+  <meta name="twitter:title" content="Jiaming Xu (许家铭)" />
+  <meta name="twitter:description" content="Large Model and Agent Algorithm Researcher at Xiaomi Corporation." />
+  <meta name="twitter:image" content="https://jacoxu.github.io/assets/xujiaming.jpg" />
   <style>
     :root {
       --bg: #ffffff;
@@ -48,6 +61,23 @@
       border-bottom: 1px solid var(--line);
       margin-bottom: 30px;
       flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: var(--text);
+      line-height: 1;
+    }
+
+    .topbar-links {
+      display: flex;
+      gap: 18px;
     }
 
     .hero {
@@ -259,14 +289,64 @@
     }
 
     @media (max-width: 860px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+        padding-bottom: 0;
+      }
+
+      .topbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+        width: 100%;
+        padding: 8px 0 12px;
+        border-top: 1px solid var(--line);
+        margin-top: 8px;
+      }
+
+      .topbar-links.open {
+        display: flex;
+      }
+
+      .topbar-links a {
+        padding: 8px 0;
+        font-size: 0.95rem;
+        width: 100%;
+        text-align: right;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar-links a:last-child {
+        border-bottom: none;
+      }
+
       .hero,
       .two-col {
         grid-template-columns: 1fr;
       }
 
+      .hero > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       .photo,
       .photo-placeholder {
         max-width: 220px;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .social-icons {
+        justify-content: center;
       }
     }
   </style>
@@ -274,15 +354,19 @@
 <body>
   <div class="container">
     <div class="topbar">
-      <a href="#experience">Experience</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
+      <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
+      <div class="topbar-links">
+        <a href="#experience" onclick="this.parentElement.classList.remove('open')">Experience</a>
+        <a href="#education" onclick="this.parentElement.classList.remove('open')">Education</a>
+        <a href="#research" onclick="this.parentElement.classList.remove('open')">Research</a>
+        <a href="#publications" onclick="this.parentElement.classList.remove('open')">Publications</a>
+        <a href="#contact" onclick="this.parentElement.classList.remove('open')">Contact</a>
+      </div>
     </div>
 
     <section class="hero">
       <div>
-        <img class="photo" src="xujiaming.jpg" alt="Jiaming Xu" />
+        <img class="photo" src="assets/xujiaming.jpg" alt="Jiaming Xu" />
         <div class="social-icons">
           <!-- Email -->
           <a href="mailto:jacoxu@msn.com" title="Email">
@@ -332,7 +416,7 @@
       <h2>Experience</h2>
 
       <div class="exp-item">
-        <img class="exp-logo" src="xiaomi_logo.png" alt="Xiaomi" />
+        <img class="exp-logo" src="assets/xiaomi_logo.png" alt="Xiaomi" />
         <div class="exp-info">
           <div class="exp-title">AI Algorithm Expert / Senior Professional Engineer</div>
           <div class="exp-org"><a href="https://www.mi.com/global/" target="_blank">Xiaomi Corporation</a></div>
@@ -342,12 +426,43 @@
       </div>
 
       <div class="exp-item">
-        <img class="exp-logo" src="casia_logo.png" alt="CASIA" />
+        <img class="exp-logo" src="assets/casia_logo.png" alt="CASIA" />
         <div class="exp-info">
           <div class="exp-title">Associate Researcher / Master's Thesis Advisor</div>
           <div class="exp-org"><a href="http://english.ia.cas.cn/" target="_blank">Institute of Automation, Chinese Academy of Sciences (CASIA)</a></div>
           <div class="exp-detail">Jan 2016 – Dec 2022 · Beijing, China</div>
           <div class="exp-detail">Human-Computer Dialogue · Auditory Models</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+
+      <div class="exp-item">
+        <img class="exp-logo" src="assets/ucas_logo.png" alt="UCAS" />
+        <div class="exp-info">
+          <div class="exp-title">Ph.D. in Pattern Recognition, 2012.09 – 2016.01</div>
+          <div class="exp-org">University of Chinese Academy of Sciences (UCAS)</div>
+          <div class="exp-detail">Advisor: Prof. Jun Zhao, Prof. Bo Xu</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <img class="exp-logo" src="assets/cuhk_logo.png" alt="CUHK" />
+        <div class="exp-info">
+          <div class="exp-title">Visiting Ph.D. in Computer Science, 2014.06 – 2014.08</div>
+          <div class="exp-org">The Chinese University of Hong Kong (CUHK)</div>
+          <div class="exp-detail">Advisor: Dr. Haiqing Yang, Prof. Irwin King</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <img class="exp-logo" src="assets/ustb_logo.png" alt="USTB" />
+        <div class="exp-info">
+          <div class="exp-title">M.S. in Electronic Engineering, 2009.09 – 2012.01</div>
+          <div class="exp-org">University of Science and Technology Beijing (USTB)</div>
+          <div class="exp-detail">Advisor: Prof. Lun Xie, Prof. Zhiliang Wang</div>
         </div>
       </div>
     </section>
@@ -367,6 +482,53 @@
       <h2>Selected Publications / Talks</h2>
 
       <div class="item">
+        <div class="item-title">[Paper] <a href="https://arxiv.org/abs/2603.15039" target="_blank">GUI-CEval: A Hierarchical and Comprehensive Chinese Benchmark for Mobile GUI Agents</a></div>
+        <div>Yang Li, Yuchen Liu, Haoyu Lu, Zhiqiang Xia, Hongzhen Wang, Kaiyang Han, Changpeng Yang, Jinyang Wu, <strong>Jiaming Xu</strong>, Runyu Shi, Ying Huang</div>
+        <div class="meta">CVPR, 2026</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://arxiv.org/abs/2602.21858" target="_blank">ProactiveMobile: A Comprehensive Benchmark for Boosting Proactive Intelligence on Mobile Devices</a></div>
+        <div>Dezhi Kong, Zhengzhao Feng, Qiliang Liang, Hao Wang, Haofei Sun, Changpeng Yang, Yang Li, Peng Zhou, Shuai Nie, Hongzhen Wang, Linfeng Zhou, Hao Jia, <strong>Jiaming Xu</strong>, Runyu Shi, Ying Huang</div>
+        <div class="meta">CVPR, 2026</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://arxiv.org/abs/2601.14714" target="_blank">Unified Multimodal and Multilingual Retrieval via Multi-Task Learning with NLU Integration</a></div>
+        <div>Xinyuan Zhang, Lina Zhang, Lisung Chen, Guangyao Liu, Shuai Nie, <strong>Jiaming Xu</strong>, Runyu Shi, Ying Huang, Guoquan Zhang</div>
+        <div class="meta">ICASSP, 2026</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Talk] <a href="assets/Slides-Xiaomi%20On-Device%20Large%20Model.pdf" target="_blank">Xiaomi On-Device Large Model</a></div>
+        <div class="meta"><a href="https://dev.mi.com/partnersconference/2025" style="color: inherit;">Xiaomi Human x Car x Home Ecosystem Partners Conference, 2025</a></div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://doi.org/10.1609/aaai.v40i40.40717" target="_blank">From Imitation to Discrimination: Toward a Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks</a></div>
+        <div>Changpeng Yang, Jinyang Wu, Yuchen Liu, Shuai Zhang, Yang Li, Qiliang Liang, Hongzhen Wang, Shuai Nie, <strong>Jiaming Xu</strong>, Runyu Shi, Ying Huang, Guoquan Zhang</div>
+        <div class="meta">AAAI, 2026</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Report] <a href="https://arxiv.org/abs/2512.14052" target="_blank">HyperVL: An Efficient and Dynamic Multimodal Large Language Model for Edge Devices</a></div>
+        <div>HyperAI Xiaomi, <strong>Project Leader</strong></div>
+        <div class="meta">Technical Report, 2025</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Report] <a href="https://arxiv.org/abs/2506.03569" target="_blank">MiMo-VL Technical Report</a></div>
+        <div>LLM-Core Xiaomi, <strong>Contributor</strong></div>
+        <div class="meta">Technical Report, 2025</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://doi.org/10.1109/ICME59968.2025.11209200" target="_blank">G-TADS: GUI Task-Ability Decoupling Strategy for High-Adaptability Multimodal Intelligent Agents</a></div>
+        <div>Zhiqiang Xia, Xinyuan Zhang, Yang Li, Yuchen Liu, Runyu Shi, <strong>Jiaming Xu</strong></div>
+        <div class="meta">ICME, 2025</div>
+      </div>
+
+      <div class="item">
         <div class="item-title">[Paper] <a href="https://doi.org/10.1109/IJCNN60899.2024.10650304" target="_blank">OSAgent: Copiloting Operating System with LLM-based Agent</a></div>
         <div><strong>Jiaming Xu</strong>, Kaibin Guo, Wuxuan Gong, Runyu Shi</div>
         <div class="meta">IJCNN, 2024</div>
@@ -379,8 +541,69 @@
       </div>
 
       <div class="item">
-        <div class="item-title">[Talk] <a href="Slides-Xiaomi%20On-Device%20Large%20Model.pdf" target="_blank">Xiaomi On-Device Large Model</a></div>
-        <div class="meta"><a href="https://dev.mi.com/partnersconference/2025" style="color: inherit;">Xiaomi Human x Car x Home Ecosystem Partners Conference, 2025</a></div>
+        <div class="item-title">[Paper] <a href="https://doi.org/10.1609/aaai.v34i05.6248" target="_blank">DMRM: A Dual-channel Multi-hop Reasoning Model for Visual Dialog</a></div>
+        <div>Feilong Chen, Fandong Meng, <strong>Jiaming Xu</strong>, Peng Li, Bo Xu, Jie Zhou</div>
+        <div class="meta">AAAI, 2020</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://proceedings.neurips.cc/paper/2020/hash/27059a11c58ade9b03bde05c2ca7c285-Abstract.html" target="_blank">Sequence to Multi-Sequence Learning via Conditional Chain Mapping for Mixture Signals</a></div>
+        <div>Jing Shi, Xuankai Chang, Pengcheng Guo, Shinji Watanabe, Yusuke Fujita, <strong>Jiaming Xu</strong>, Bo Xu, Lei Xie</div>
+        <div class="meta">NeurIPS, 2020</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://doi.org/10.18653/v1/P19-1258" target="_blank">A Working Memory Model for Task-oriented Dialog Response Generation</a></div>
+        <div>Xiuyi Chen, <strong>Jiaming Xu</strong>, Bo Xu</div>
+        <div class="meta">ACL, 2019</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://doi.org/10.18653/v1/N19-1266" target="_blank">The World in My Mind: Visual Dialog with Adversarial Multi-modal Feature Encoding</a></div>
+        <div>Yiqun Yao, <strong>Jiaming Xu</strong>, Bo Xu</div>
+        <div class="meta">NAACL, 2019</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://doi.org/10.18653/v1/D18-1118" target="_blank">Cascaded Mutual Modulation for Visual Reasoning</a></div>
+        <div>Yiqun Yao, <strong>Jiaming Xu</strong>, Feng Wang, Bo Xu</div>
+        <div class="meta">EMNLP, 2018</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://doi.org/10.1016/j.neunet.2018.06.012" target="_blank">Learning to Activate Logic Rules for Textual Reasoning</a></div>
+        <div>Yiqun Yao, <strong>Jiaming Xu</strong>, Jing Shi, Bo Xu</div>
+        <div class="meta">Neural Networks, 2018</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://doi.org/10.1609/aaai.v32i1.11879" target="_blank">Modeling Attention and Memory for Auditory Selection in a Cocktail Party Environment</a></div>
+        <div><strong>Jiaming Xu</strong>, Jing Shi, Guangcan Liu, Xiuyi Chen, Bo Xu</div>
+        <div class="meta">AAAI, 2018</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://doi.org/10.1016/j.neunet.2016.12.008" target="_blank">Self-Taught Convolutional Neural Networks for Short Text Clustering</a></div>
+        <div><strong>Jiaming Xu</strong>, Jiaming Xu, Bo Xu, Peng Wang, Suncong Zheng, Guanhua Tian, Jun Zhao, Bo Xu</div>
+        <div class="meta">Neural Networks, 2017</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://aclanthology.org/C16-1216/" target="_blank">Hierarchical Memory Networks for Answer Selection on Unknown Words</a></div>
+        <div><strong>Jiaming Xu</strong>, Jing Shi, Yiqun Yao, Suncong Zheng, Bo Xu, Bo Xu</div>
+        <div class="meta">COLING, 2016</div>
+      </div>
+    
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://doi.org/10.3115/v1/P15-2058" target="_blank">Semantic Clustering and Convolutional Neural Network for Short Text Categorization</a></div>
+        <div>Peng Wang, <strong>Jiaming Xu</strong>, Bo Xu, Cheng-Lin Liu, Heng Zhang, Fangyuan Wang, Hongwei Hao</div>
+        <div class="meta">ACL, 2015</div>
+      </div>
+
+      <div class="item">
+        <div class="item-title">[Paper] <a href="https://www.ijcai.org/Abstract/15/197" target="_blank">Convolutional Neural Networks for Text Hashing</a></div>
+        <div><strong>Jiaming Xu</strong>, Peng Wang, Guanhua Tian, Bo Xu, Jun Zhao, Fangyuan Wang, Hongwei Hao</div>
+        <div class="meta">IJCAI, 2015</div>
       </div>
     </section>
 
