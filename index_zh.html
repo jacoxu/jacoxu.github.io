@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jiaming Xu (许家铭)</title>
-  <meta name="description" content="Jiaming Xu | Large Model and Agent Algorithm Researcher at Xiaomi Corporation" />
+  <title>许家铭 (Jiaming Xu)</title>
+  <meta name="description" content="许家铭 | 小米集团大模型与智能体算法研究员" />
   <link rel="icon" href="assets/favicon.jpg" type="image/jpeg" />
   <!-- Open Graph -->
-  <meta property="og:title" content="Jiaming Xu (许家铭)" />
-  <meta property="og:description" content="Large Model and Agent Algorithm Researcher at Xiaomi Corporation. Research on Multimodal LLMs, AI Agents, On-device AI, Reasoning and Memory." />
+  <meta property="og:title" content="许家铭 (Jiaming Xu)" />
+  <meta property="og:description" content="小米集团大模型与智能体算法研究员，研究方向：多模态大模型、AI智能体、端侧AI、推理与记忆。" />
   <meta property="og:image" content="https://jacoxu.github.io/assets/xujiaming.jpg" />
-  <meta property="og:url" content="https://jacoxu.github.io/" />
+  <meta property="og:url" content="https://jacoxu.github.io/index_zh.html" />
   <meta property="og:type" content="website" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@jacoxu1987" />
-  <meta name="twitter:title" content="Jiaming Xu (许家铭)" />
-  <meta name="twitter:description" content="Large Model and Agent Algorithm Researcher at Xiaomi Corporation." />
+  <meta name="twitter:title" content="许家铭 (Jiaming Xu)" />
+  <meta name="twitter:description" content="小米集团大模型与智能体算法研究员。" />
   <meta name="twitter:image" content="https://jacoxu.github.io/assets/xujiaming.jpg" />
   <style>
     :root {
@@ -35,7 +35,7 @@
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
       line-height: 1.72;
     }
 
@@ -131,29 +131,14 @@
       fill: currentColor;
     }
 
-    .photo-placeholder {
-      width: 100%;
-      aspect-ratio: 1 / 1.08;
-      border-radius: 12px;
-      border: 1px solid var(--line);
-      background: linear-gradient(135deg, #eef2ff, #f8fafc);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      font-size: 0.98rem;
-      text-align: center;
-      padding: 16px;
-    }
-
     h1 {
       margin: 0 0 8px;
       font-size: 2.2rem;
       line-height: 1.2;
     }
 
-    .name-cn {
-      font-size: 1.5rem;
+    .name-en {
+      font-size: 1.3rem;
       color: var(--muted);
       margin-left: 8px;
       font-weight: 500;
@@ -168,14 +153,6 @@
     .intro p {
       margin: 0 0 12px;
       font-size: 0.99rem;
-    }
-
-    .quick-links {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-      font-size: 0.96rem;
     }
 
     .section {
@@ -227,26 +204,6 @@
       margin-top: 2px;
     }
 
-    .two-col {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 28px;
-    }
-
-    .card {
-      background: var(--soft);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 16px 18px;
-    }
-
-    ul {
-      margin: 8px 0 0 20px;
-      padding: 0;
-    }
-
-    li { margin-bottom: 8px; }
-
     .item {
       margin-bottom: 16px;
     }
@@ -260,25 +217,12 @@
       font-size: 0.95rem;
     }
 
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 8px;
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
     }
 
-    .tag {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 5px 10px;
-      font-size: 0.88rem;
-      color: var(--muted);
-      background: #fff;
-    }
-
-    .news li {
-      margin-bottom: 10px;
-    }
+    li { margin-bottom: 8px; }
 
     footer {
       margin-top: 52px;
@@ -327,8 +271,7 @@
         border-bottom: none;
       }
 
-      .hero,
-      .two-col {
+      .hero {
         grid-template-columns: 1fr;
       }
 
@@ -338,8 +281,7 @@
         align-items: center;
       }
 
-      .photo,
-      .photo-placeholder {
+      .photo {
         max-width: 220px;
         margin: 0 auto;
         display: block;
@@ -356,26 +298,26 @@
     <div class="topbar">
       <button class="menu-toggle" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
       <div class="topbar-links">
-        <a href="#experience" onclick="this.parentElement.classList.remove('open')">Experience</a>
-        <a href="#education" onclick="this.parentElement.classList.remove('open')">Education</a>
-        <a href="#projects" onclick="this.parentElement.classList.remove('open')">Projects</a>
-        <a href="#research" onclick="this.parentElement.classList.remove('open')">Research</a>
-        <a href="#publications" onclick="this.parentElement.classList.remove('open')">Publications</a>
-        <a href="#contact" onclick="this.parentElement.classList.remove('open')">Contact</a>
-        <a href="index_zh.html">中文</a>
+        <a href="#experience" onclick="this.parentElement.classList.remove('open')">工作经历</a>
+        <a href="#education" onclick="this.parentElement.classList.remove('open')">教育背景</a>
+        <a href="#projects" onclick="this.parentElement.classList.remove('open')">项目经历</a>
+        <a href="#research" onclick="this.parentElement.classList.remove('open')">研究方向</a>
+        <a href="#publications" onclick="this.parentElement.classList.remove('open')">学术成果</a>
+        <a href="#contact" onclick="this.parentElement.classList.remove('open')">联系方式</a>
+        <a href="index.html">English</a>
       </div>
     </div>
 
     <section class="hero">
       <div>
-        <img class="photo" src="assets/xujiaming.jpg" alt="Jiaming Xu" />
+        <img class="photo" src="assets/xujiaming.jpg" alt="许家铭" />
         <div class="social-icons">
           <!-- Email -->
-          <a href="mailto:jacoxu@msn.com" title="Email">
+          <a href="mailto:jacoxu@msn.com" title="邮件">
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
           </a>
           <!-- Weibo -->
-          <a href="https://weibo.com/u/1769670415" target="_blank" title="Weibo">
+          <a href="https://weibo.com/u/1769670415" target="_blank" title="微博">
             <svg viewBox="0 0 24 24"><path d="M10.098 20c-4.612 0-8.363-2.222-8.363-4.963 0-1.437.876-3.1 2.385-4.676 2.01-2.1 4.349-3.05 5.226-2.12.384.404.42 1.085.112 1.9-.132.35.152.4.152.4 1.57-.69 2.972-.792 3.49-.14.273.344.228.82-.02 1.39-.106.24-.06.36.12.4.772.16 1.35.56 1.35 1.1 0 .14-.03.28-.08.42-.56 1.44-2.7 3.61-5.76 4.81-1.42.56-2.88.84-4.29.84-.12 0-.22 0-.32-.01zm-1.49-6.69c-1.97.21-3.46 1.46-3.33 2.8.13 1.34 1.82 2.24 3.79 2.03 1.97-.21 3.46-1.46 3.33-2.8-.13-1.34-1.82-2.24-3.79-2.03zm2.39 2.52c-.31.54-.99.78-1.5.53-.5-.25-.66-.88-.35-1.41.31-.53.97-.76 1.48-.53.52.24.68.87.37 1.41zm1.06-1.32c-.12.2-.38.3-.58.22-.2-.08-.27-.3-.16-.5.12-.2.37-.3.57-.22.2.08.28.3.17.5zM17.678 5.347c-1.896-2.11-4.69-2.868-7.242-2.26a.624.624 0 0 0 .282 1.216c2.145-.51 4.496.13 6.1 1.912 1.604 1.783 2.06 4.207 1.353 6.298a.625.625 0 0 0 1.182.404c.842-2.483.32-5.36-1.675-7.57zm-1.578 1.836c-1.126-1.252-2.852-1.728-4.382-1.372a.524.524 0 1 0 .236 1.022c1.15-.268 2.448.09 3.296 1.032.848.943 1.077 2.256.7 3.388a.524.524 0 1 0 .994.338c.449-1.344.157-2.906-.844-4.408z"/></svg>
           </a>
           <!-- Twitter / X -->
@@ -383,7 +325,7 @@
             <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
           <!-- Google Scholar -->
-          <a href="https://scholar.google.com/citations?user=rU6v21oAAAAJ&hl=en" target="_blank" title="Google Scholar">
+          <a href="https://scholar.google.com/citations?user=rU6v21oAAAAJ&hl=en" target="_blank" title="谷歌学术">
             <svg viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
           </a>
           <!-- GitHub -->
@@ -394,268 +336,265 @@
       </div>
 
       <div class="intro">
-        <h1>Jiaming Xu <span class="name-cn">许家铭</span></h1>
+        <h1>许家铭 <span class="name-en">Jiaming Xu</span></h1>
         <div class="subtitle">
-          Large Model and Agent Algorithm Researcher at Xiaomi Corporation<br/>
-          Multimodal LLMs · AI Agents · On-device AI · Reasoning · Memory
+          小米集团 大模型与智能体算法研究员<br/>
+          多模态大模型 · AI智能体 · 端侧AI · 推理 · 记忆
         </div>
 
         <p>
-          I am a senior algorithm expert at Xiaomi Corporation, working on large language models and AI agent systems.
-          I am also an IEEE Senior Member and hold a senior professional title (正高级工程师).
+          许家铭，博士，正高级工程师，IEEE高级会员。现任小米集团AI算法专家，主要从事大语言模型和AI智能体系统研究。
         </p>
 
         <p>
-          I received my Ph.D. from the University of Chinese Academy of Sciences in 2016.
-          After that, I worked at the Institute of Automation, Chinese Academy of Sciences as an assistant researcher and then associate researcher, also serving as a master's thesis advisor.
-          I joined Xiaomi in December 2022, where my recent work spans multimodal LLMs, AI agents, on-device AI, and reasoning and memory architectures.
+          2016年博士毕业于中国科学院大学（模式识别专业）。毕业后在中国科学院自动化研究所工作，先后任助理研究员、副研究员，兼任硕士生导师。2022年12月以专家算法工程师加入小米集团，目前研究方向涵盖多模态大模型、AI智能体、端侧AI、推理与记忆架构等。
         </p>
 
       </div>
     </section>
 
     <section id="experience" class="section">
-      <h2>Experience</h2>
+      <h2>工作经历</h2>
 
       <div class="exp-item">
-        <img class="exp-logo" src="assets/xiaomi_logo.png" alt="Xiaomi" />
+        <img class="exp-logo" src="assets/xiaomi_logo.png" alt="小米" />
         <div class="exp-info">
-          <div class="exp-title">AI Algorithm Expert / Senior Professional Engineer</div>
-          <div class="exp-org"><a href="https://www.mi.com/global/" target="_blank">Xiaomi Corporation</a></div>
-          <div class="exp-detail">Dec 2022 – Present · Beijing, China</div>
-          <div class="exp-detail">Multimodal Large Language Models · AI Agents</div>
+          <div class="exp-title">AI算法专家 / 正高级工程师</div>
+          <div class="exp-org"><a href="https://www.mi.com/index.html" target="_blank">小米集团</a></div>
+          <div class="exp-detail">2022.12 – 至今 · 北京</div>
+          <div class="exp-detail">多模态大语言模型 · AI智能体</div>
         </div>
       </div>
 
       <div class="exp-item">
-        <img class="exp-logo" src="assets/casia_logo.png" alt="CASIA" />
+        <img class="exp-logo" src="assets/casia_logo.png" alt="中科院自动化所" />
         <div class="exp-info">
-          <div class="exp-title">Associate Researcher / Master's Thesis Advisor</div>
-          <div class="exp-org"><a href="http://english.ia.cas.cn/" target="_blank">Institute of Automation, Chinese Academy of Sciences (CASIA)</a></div>
-          <div class="exp-detail">Jan 2016 – Dec 2022 · Beijing, China</div>
-          <div class="exp-detail">Human-Computer Dialogue · Auditory Models</div>
+          <div class="exp-title">副研究员 / 硕士生导师</div>
+          <div class="exp-org"><a href="http://www.ia.cas.cn/" target="_blank">中国科学院自动化研究所</a></div>
+          <div class="exp-detail">2016.01 – 2022.12 · 北京</div>
+          <div class="exp-detail">人机对话 · 听觉模型</div>
         </div>
       </div>
     </section>
 
     <section id="education" class="section">
-      <h2>Education</h2>
+      <h2>教育背景</h2>
 
       <div class="exp-item">
-        <img class="exp-logo" src="assets/ucas_logo.png" alt="UCAS" />
+        <img class="exp-logo" src="assets/ucas_logo.png" alt="国科大" />
         <div class="exp-info">
-          <div class="exp-title">Ph.D. in Pattern Recognition, 2012.09 – 2016.01</div>
-          <div class="exp-org">University of Chinese Academy of Sciences (UCAS)</div>
-          <div class="exp-detail">Advisor: Prof. Jun Zhao, Prof. Bo Xu</div>
+          <div class="exp-title">博士，模式识别专业，2012.09 – 2016.01</div>
+          <div class="exp-org">中国科学院大学</div>
+          <div class="exp-detail">导师：赵军 研究员、徐波 研究员</div>
         </div>
       </div>
 
       <div class="exp-item">
-        <img class="exp-logo" src="assets/cuhk_logo.png" alt="CUHK" />
+        <img class="exp-logo" src="assets/cuhk_logo.png" alt="港中文" />
         <div class="exp-info">
-          <div class="exp-title">Visiting Ph.D. in Computer Science, 2014.06 – 2014.08</div>
-          <div class="exp-org">The Chinese University of Hong Kong (CUHK)</div>
-          <div class="exp-detail">Advisor: Dr. Haiqing Yang, Prof. Irwin King</div>
+          <div class="exp-title">访问博士，计算科学专业，2014.06 – 2014.08</div>
+          <div class="exp-org">香港中文大学</div>
+          <div class="exp-detail">导师：Dr. Haiqing Yang、Prof. Irwin King</div>
         </div>
       </div>
 
       <div class="exp-item">
-        <img class="exp-logo" src="assets/ustb_logo.png" alt="USTB" />
+        <img class="exp-logo" src="assets/ustb_logo.png" alt="北科大" />
         <div class="exp-info">
-          <div class="exp-title">M.S. in Electronic Engineering, 2009.09 – 2012.01</div>
-          <div class="exp-org">University of Science and Technology Beijing (USTB)</div>
-          <div class="exp-detail">Advisor: Prof. Lun Xie, Prof. Zhiliang Wang</div>
+          <div class="exp-title">硕士，电子工程专业，2009.09 – 2012.01</div>
+          <div class="exp-org">北京科技大学</div>
+          <div class="exp-detail">导师：解仑 教授、王志良 教授</div>
         </div>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <h2>Selected Projects</h2>
+      <h2>项目经历</h2>
 
       <div class="item">
-        <div class="item-title">On-Device Large Model</div>
-        <div class="meta">Xiaomi Corporation · Sep 2024 – Present · Project Lead</div>
-        <div>Leading the development of efficient on-device large language models and multimodal models for Xiaomi's mobile, enabling local AI inference with low latency and strong privacy.</div>
+        <div class="item-title">端侧大模型</div>
+        <div class="meta">小米集团 · 2024.09 – 至今 · 项目负责人</div>
+        <div>主导面向小米手机的端侧大语言模型和多模态模型研发，实现低延迟、强隐私的本地AI推理能力。</div>
       </div>
 
       <div class="item">
-        <div class="item-title">System AI Agent</div>
-        <div class="meta">Xiaomi Corporation · Dec 2023 – Present · Project Lead</div>
-        <div>Building OS-level AI agent systems for Xiaomi devices, including GUI understanding, autonomous task execution, and intelligent user interaction across mobile and smart home platforms.</div>
+        <div class="item-title">系统AI智能体</div>
+        <div class="meta">小米集团 · 2023.12 – 至今 · 项目负责人</div>
+        <div>构建操作系统级AI智能体系统，涵盖GUI理解、自主任务执行和跨手机及智能家居平台的智能交互。</div>
       </div>
 
       <div class="item">
-        <div class="item-title">On-Device Noise Reduction for Calls</div>
-        <div class="meta">Xiaomi Corporation · Dec 2022 – Dec 2023 · Project Lead</div>
-        <div>Developed and deployed on-device deep learning models for real-time speech enhancement and noise suppression during voice calls on Xiaomi smartphones.</div>
+        <div class="item-title">端侧通话降噪</div>
+        <div class="meta">小米集团 · 2022.12 – 2023.12 · 项目负责人</div>
+        <div>研发并部署端侧深度学习模型，用于小米手机通话场景的实时语音增强与噪声抑制。</div>
       </div>
 
       <div class="item">
-        <div class="item-title">Multimodal Human-Computer Dialogue</div>
-        <div class="meta">CASIA · 2016 – 2022</div>
-        <div>Research on task-oriented dialogue systems, visual dialog, and multimodal reasoning, with publications at ACL, NAACL, AAAI, and EMNLP.</div>
+        <div class="item-title">多模态人机对话</div>
+        <div class="meta">中国科学院自动化研究所 · 2016 – 2022</div>
+        <div>研究任务型对话系统、视觉对话和多模态推理，相关成果发表于ACL、NAACL、AAAI、EMNLP等会议。</div>
       </div>
 
       <div class="item">
-        <div class="item-title">Cocktail Party Auditory Attention Model</div>
-        <div class="meta">CASIA · 2016 – 2022</div>
-        <div>Research on computational auditory attention and speaker separation in multi-talker environments, with publications at AAAI, NeurIPS, and IEEE TASLP.</div>
+        <div class="item-title">鸡尾酒会听觉注意力模型</div>
+        <div class="meta">中国科学院自动化研究所 · 2016 – 2022</div>
+        <div>研究多说话人环境下的计算听觉注意力与说话人分离，相关成果发表于AAAI、NeurIPS、IEEE TASLP等。</div>
       </div>
     </section>
 
     <section id="research" class="section">
-      <h2>Research Interests</h2>
+      <h2>研究方向</h2>
       <ul>
-        <li>Multimodal large language models and intelligent user interfaces</li>
-        <li>AI agents for mobile systems, GUI control, and complex task execution</li>
-        <li>On-device AI, efficient inference, and personalized intelligence</li>
-        <li>Reasoning, memory, and system-level orchestration for AI assistants</li>
-        <li>Data engines, evaluation benchmarks, and scalable model development infrastructure</li>
+        <li>多模态大语言模型与智能用户界面</li>
+        <li>面向移动系统的AI智能体、GUI控制与复杂任务执行</li>
+        <li>端侧AI、高效推理与个性化智能</li>
+        <li>推理、记忆与AI助手的系统级编排</li>
+        <li>数据引擎、评测基准与大规模模型开发基础设施</li>
       </ul>
     </section>
 
     <section id="publications" class="section">
-      <h2>Selected Publications / Talks</h2>
+      <h2>代表性学术成果</h2>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://arxiv.org/abs/2603.15039" target="_blank">GUI-CEval: A Hierarchical and Comprehensive Chinese Benchmark for Mobile GUI Agents</a></div>
+        <div class="item-title">[论文] <a href="https://arxiv.org/abs/2603.15039" target="_blank">GUI-CEval: A Hierarchical and Comprehensive Chinese Benchmark for Mobile GUI Agents</a></div>
         <div>Yang Li, Yuchen Liu, Haoyu Lu, Zhiqiang Xia, Hongzhen Wang, Kaiyang Han, Changpeng Yang, Jinyang Wu, <strong>Jiaming Xu</strong>, Runyu Shi, Ying Huang</div>
         <div class="meta">CVPR, 2026</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://arxiv.org/abs/2602.21858" target="_blank">ProactiveMobile: A Comprehensive Benchmark for Boosting Proactive Intelligence on Mobile Devices</a></div>
+        <div class="item-title">[论文] <a href="https://arxiv.org/abs/2602.21858" target="_blank">ProactiveMobile: A Comprehensive Benchmark for Boosting Proactive Intelligence on Mobile Devices</a></div>
         <div>Dezhi Kong, Zhengzhao Feng, Qiliang Liang, Hao Wang, Haofei Sun, Changpeng Yang, Yang Li, Peng Zhou, Shuai Nie, Hongzhen Wang, Linfeng Zhou, Hao Jia, <strong>Jiaming Xu</strong>, Runyu Shi, Ying Huang</div>
         <div class="meta">CVPR, 2026</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://arxiv.org/abs/2601.14714" target="_blank">Unified Multimodal and Multilingual Retrieval via Multi-Task Learning with NLU Integration</a></div>
+        <div class="item-title">[论文] <a href="https://arxiv.org/abs/2601.14714" target="_blank">Unified Multimodal and Multilingual Retrieval via Multi-Task Learning with NLU Integration</a></div>
         <div>Xinyuan Zhang, Lina Zhang, Lisung Chen, Guangyao Liu, Shuai Nie, <strong>Jiaming Xu</strong>, Runyu Shi, Ying Huang, Guoquan Zhang</div>
         <div class="meta">ICASSP, 2026</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Talk] <a href="assets/Slides-Xiaomi%20On-Device%20Large%20Model.pdf" target="_blank">Xiaomi On-Device Large Model</a></div>
-        <div class="meta"><a href="https://dev.mi.com/partnersconference/2025" style="color: inherit;">Xiaomi Human x Car x Home Ecosystem Partners Conference, 2025</a></div>
+        <div class="item-title">[演讲] <a href="assets/Slides-Xiaomi%20On-Device%20Large%20Model.pdf" target="_blank">Xiaomi On-Device Large Model</a></div>
+        <div class="meta"><a href="https://dev.mi.com/partnersconference/2025" style="color: inherit;">小米人车家生态伙伴大会, 2025</a></div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.1609/aaai.v40i40.40717" target="_blank">From Imitation to Discrimination: Toward a Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.1609/aaai.v40i40.40717" target="_blank">From Imitation to Discrimination: Toward a Generalized Curriculum Advantage Mechanism Enhancing Cross-Domain Reasoning Tasks</a></div>
         <div>Changpeng Yang, Jinyang Wu, Yuchen Liu, Shuai Zhang, Yang Li, Qiliang Liang, Hongzhen Wang, Shuai Nie, <strong>Jiaming Xu</strong>, Runyu Shi, Ying Huang, Guoquan Zhang</div>
         <div class="meta">AAAI, 2026</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Report] <a href="https://arxiv.org/abs/2512.14052" target="_blank">HyperVL: An Efficient and Dynamic Multimodal Large Language Model for Edge Devices</a></div>
-        <div>HyperAI Xiaomi, <strong>Project Leader</strong></div>
-        <div class="meta">Technical Report, 2025</div>
+        <div class="item-title">[报告] <a href="https://arxiv.org/abs/2512.14052" target="_blank">HyperVL: An Efficient and Dynamic Multimodal Large Language Model for Edge Devices</a></div>
+        <div>HyperAI Xiaomi，<strong>项目负责人</strong></div>
+        <div class="meta">技术报告, 2025</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Report] <a href="https://arxiv.org/abs/2506.03569" target="_blank">MiMo-VL Technical Report</a></div>
-        <div>LLM-Core Xiaomi, <strong>Contributor</strong></div>
-        <div class="meta">Technical Report, 2025</div>
+        <div class="item-title">[报告] <a href="https://arxiv.org/abs/2506.03569" target="_blank">MiMo-VL Technical Report</a></div>
+        <div>LLM-Core Xiaomi，<strong>贡献者</strong></div>
+        <div class="meta">技术报告, 2025</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.1109/ICME59968.2025.11209200" target="_blank">G-TADS: GUI Task-Ability Decoupling Strategy for High-Adaptability Multimodal Intelligent Agents</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.1109/ICME59968.2025.11209200" target="_blank">G-TADS: GUI Task-Ability Decoupling Strategy for High-Adaptability Multimodal Intelligent Agents</a></div>
         <div>Zhiqiang Xia, Xinyuan Zhang, Yang Li, Yuchen Liu, Runyu Shi, <strong>Jiaming Xu</strong></div>
         <div class="meta">ICME, 2025</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.1109/IJCNN60899.2024.10650304" target="_blank">OSAgent: Copiloting Operating System with LLM-based Agent</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.1109/IJCNN60899.2024.10650304" target="_blank">OSAgent: Copiloting Operating System with LLM-based Agent</a></div>
         <div><strong>Jiaming Xu</strong>, Kaibin Guo, Wuxuan Gong, Runyu Shi</div>
         <div class="meta">IJCNN, 2024</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.1109/TASLP.2023.3323856" target="_blank">Multi-Cue Guided Semi-Supervised Learning Toward Target Speaker Separation in Real Environments</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.1109/TASLP.2023.3323856" target="_blank">Multi-Cue Guided Semi-Supervised Learning Toward Target Speaker Separation in Real Environments</a></div>
         <div><strong>Jiaming Xu</strong>, Jian Cui, Yunzhe Hao, Bo Xu</div>
         <div class="meta">TASLP, 2023</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.1609/aaai.v34i05.6248" target="_blank">DMRM: A Dual-channel Multi-hop Reasoning Model for Visual Dialog</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.1609/aaai.v34i05.6248" target="_blank">DMRM: A Dual-channel Multi-hop Reasoning Model for Visual Dialog</a></div>
         <div>Feilong Chen, Fandong Meng, <strong>Jiaming Xu</strong>, Peng Li, Bo Xu, Jie Zhou</div>
         <div class="meta">AAAI, 2020</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://proceedings.neurips.cc/paper/2020/hash/27059a11c58ade9b03bde05c2ca7c285-Abstract.html" target="_blank">Sequence to Multi-Sequence Learning via Conditional Chain Mapping for Mixture Signals</a></div>
+        <div class="item-title">[论文] <a href="https://proceedings.neurips.cc/paper/2020/hash/27059a11c58ade9b03bde05c2ca7c285-Abstract.html" target="_blank">Sequence to Multi-Sequence Learning via Conditional Chain Mapping for Mixture Signals</a></div>
         <div>Jing Shi, Xuankai Chang, Pengcheng Guo, Shinji Watanabe, Yusuke Fujita, <strong>Jiaming Xu</strong>, Bo Xu, Lei Xie</div>
         <div class="meta">NeurIPS, 2020</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.18653/v1/P19-1258" target="_blank">A Working Memory Model for Task-oriented Dialog Response Generation</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.18653/v1/P19-1258" target="_blank">A Working Memory Model for Task-oriented Dialog Response Generation</a></div>
         <div>Xiuyi Chen, <strong>Jiaming Xu</strong>, Bo Xu</div>
         <div class="meta">ACL, 2019</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.18653/v1/N19-1266" target="_blank">The World in My Mind: Visual Dialog with Adversarial Multi-modal Feature Encoding</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.18653/v1/N19-1266" target="_blank">The World in My Mind: Visual Dialog with Adversarial Multi-modal Feature Encoding</a></div>
         <div>Yiqun Yao, <strong>Jiaming Xu</strong>, Bo Xu</div>
         <div class="meta">NAACL, 2019</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.18653/v1/D18-1118" target="_blank">Cascaded Mutual Modulation for Visual Reasoning</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.18653/v1/D18-1118" target="_blank">Cascaded Mutual Modulation for Visual Reasoning</a></div>
         <div>Yiqun Yao, <strong>Jiaming Xu</strong>, Feng Wang, Bo Xu</div>
         <div class="meta">EMNLP, 2018</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.1016/j.neunet.2018.06.012" target="_blank">Learning to Activate Logic Rules for Textual Reasoning</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.1016/j.neunet.2018.06.012" target="_blank">Learning to Activate Logic Rules for Textual Reasoning</a></div>
         <div>Yiqun Yao, <strong>Jiaming Xu</strong>, Jing Shi, Bo Xu</div>
         <div class="meta">Neural Networks, 2018</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.1609/aaai.v32i1.11879" target="_blank">Modeling Attention and Memory for Auditory Selection in a Cocktail Party Environment</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.1609/aaai.v32i1.11879" target="_blank">Modeling Attention and Memory for Auditory Selection in a Cocktail Party Environment</a></div>
         <div><strong>Jiaming Xu</strong>, Jing Shi, Guangcan Liu, Xiuyi Chen, Bo Xu</div>
         <div class="meta">AAAI, 2018</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.1016/j.neunet.2016.12.008" target="_blank">Self-Taught Convolutional Neural Networks for Short Text Clustering</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.1016/j.neunet.2016.12.008" target="_blank">Self-Taught Convolutional Neural Networks for Short Text Clustering</a></div>
         <div><strong>Jiaming Xu</strong>, Bo Xu, Peng Wang, Suncong Zheng, Guanhua Tian, Jun Zhao, Bo Xu</div>
         <div class="meta">Neural Networks, 2017</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://aclanthology.org/C16-1216/" target="_blank">Hierarchical Memory Networks for Answer Selection on Unknown Words</a></div>
+        <div class="item-title">[论文] <a href="https://aclanthology.org/C16-1216/" target="_blank">Hierarchical Memory Networks for Answer Selection on Unknown Words</a></div>
         <div><strong>Jiaming Xu</strong>, Jing Shi, Yiqun Yao, Suncong Zheng, Bo Xu, Bo Xu</div>
         <div class="meta">COLING, 2016</div>
       </div>
-    
+
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://doi.org/10.3115/v1/P15-2058" target="_blank">Semantic Clustering and Convolutional Neural Network for Short Text Categorization</a></div>
+        <div class="item-title">[论文] <a href="https://doi.org/10.3115/v1/P15-2058" target="_blank">Semantic Clustering and Convolutional Neural Network for Short Text Categorization</a></div>
         <div>Peng Wang, <strong>Jiaming Xu</strong>, Bo Xu, Cheng-Lin Liu, Heng Zhang, Fangyuan Wang, Hongwei Hao</div>
         <div class="meta">ACL, 2015</div>
       </div>
 
       <div class="item">
-        <div class="item-title">[Paper] <a href="https://www.ijcai.org/Abstract/15/197" target="_blank">Convolutional Neural Networks for Text Hashing</a></div>
+        <div class="item-title">[论文] <a href="https://www.ijcai.org/Abstract/15/197" target="_blank">Convolutional Neural Networks for Text Hashing</a></div>
         <div><strong>Jiaming Xu</strong>, Peng Wang, Guanhua Tian, Bo Xu, Jun Zhao, Fangyuan Wang, Hongwei Hao</div>
         <div class="meta">IJCAI, 2015</div>
       </div>
     </section>
 
     <section id="contact" class="section">
-      <h2>Contact</h2>
+      <h2>联系方式</h2>
       <p>
-        Email: <a href="mailto:jacoxu@msn.com">jacoxu@msn.com</a><br/>
-        Weibo: <a href="https://weibo.com/u/1769670415" target="_blank">weibo.com/u/1769670415</a><br/>
-        Twitter: <a href="https://x.com/jacoxu1987" target="_blank">x.com/jacoxu1987</a><br/>
-        GitHub: <a href="https://github.com/jacoxu" target="_blank">github.com/jacoxu</a><br/>
-        Google Scholar: <a href="https://scholar.google.com/citations?user=rU6v21oAAAAJ&hl=en" target="_blank">Scholar Profile</a>
+        邮箱：<a href="mailto:jacoxu@msn.com">jacoxu@msn.com</a><br/>
+        微博：<a href="https://weibo.com/u/1769670415" target="_blank">weibo.com/u/1769670415</a><br/>
+        Twitter：<a href="https://x.com/jacoxu1987" target="_blank">x.com/jacoxu1987</a><br/>
+        GitHub：<a href="https://github.com/jacoxu" target="_blank">github.com/jacoxu</a><br/>
+        谷歌学术：<a href="https://scholar.google.com/citations?user=rU6v21oAAAAJ&hl=en" target="_blank">Scholar Profile</a>
       </p>
     </section>
 
     <footer>
-      © 2026 Jiaming Xu. Last updated: March 2026.
+      © 2026 许家铭. 最后更新：2026年3月
     </footer>
   </div>
 </body>
